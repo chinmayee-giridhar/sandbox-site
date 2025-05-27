@@ -1,0 +1,238 @@
+<!-- public/sandboxai.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sandbox</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Amiri Quran' rel='stylesheet'>
+    
+  
+  <style>
+    :root {
+      --bg-color: #000000;
+      --text-color: white;
+      --input-bg:#201f1f;
+      --input-color: white;
+      --placeholder-color: #cfcfcf;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    .background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 0; 
+}
+
+
+    body, html {
+      height: 100%;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      scroll-behavior: smooth;
+     
+    }
+
+    .main {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      background: var(--bg-color);
+    }
+    
+  
+
+
+    
+
+
+
+h1 {
+      font-family:'Amiri Quran';
+      font-size: 105px;
+      font-weight: 400;
+      letter-spacing: -3px;
+      padding:0;
+      line-height: 1;
+      margin-bottom: 12px;
+      z-index: 1;
+    }
+    
+    .blur {
+      filter: blur(3px);
+    }
+
+    .kindablur {
+      filter: blur(1px);
+    }
+    
+    .lilblur {
+      filter: blur(1px);
+    }
+    .logo {
+      font-size: 32px;
+      margin-top: 1600px;
+      padding:100;
+      position: relative;
+      z-index: 2;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      margin: 120px 0;
+      margin-top: 3px;
+      text-align: center;
+      letter-spacing: -1px;
+      z-index: 1;
+      opacity: 80%;
+    }
+    
+    .interest-text {
+      font-size: 16px;
+      margin-top: 40px;
+      z-index: 1;
+      text-align: center;
+    }
+
+    .email-container {
+      margin-top: 8px;
+      margin-bottom: 70px;
+      z-index: 1;
+    }
+
+    .email-input {
+      padding: 12px 20px;
+      border-radius: 12px;
+      border: none;
+      font-size: 16px;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--input-bg);
+      color: var(--input-color);
+      min-width: 300px;
+      text-align: center;
+    }
+
+    .email-input::placeholder {
+      color: var(--placeholder-color);
+      
+    }
+
+    .scattered-image {
+  position: absolute;
+  opacity: 1;
+  z-index: 0;
+}
+
+.img1 {
+  top: 5%;
+  left: 3%;
+  transform: rotate(-17deg);
+  width: 100px;
+  opacity: 1;
+  z-index: 0;
+}
+
+.img2 {
+  bottom: 10%;
+  right: 8%;
+  transform: rotate(12deg);
+  width: 120px;
+  opacity:1;
+  z-index:0;
+}
+
+.img3 {
+  top: 40%;
+  right: 2%;
+  transform: rotate(-28deg);
+  width: 120px;
+  opacity: 1;
+  z-index: 0;
+}
+
+.scattered-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+    
+
+    footer {
+      text-align: center;
+      padding: 40px 0;
+      font-size: 14px;
+      background-color: var(--bg-color);
+      position: relative;
+      z-index: 1;
+      opacity: 70%;
+    }
+  </style>
+</head>
+<body>
+  <section class="main">
+    
+    <img src="C:\Users\91829\OneDrive\Desktop\Sandbox\bg2.jpg" class="background-image" />
+
+   
+    
+
+    <div class="scattered-image img1">
+      <img src="C:\Users\91829\OneDrive\Desktop\Sandbox\cube 3.png" alt="Decorative 1" />
+    </div>
+    <div class="scattered-image img2">
+      <img src="C:\Users\91829\OneDrive\Desktop\Sandbox\cube 1.png" alt="Decorative 2" />
+    </div>
+    <div class="scattered-image img3">
+      <img src="C:\Users\91829\OneDrive\Desktop\Sandbox\cube 2.png" alt="Decorative 3" />
+    </div>
+
+
+    <h1><span class="kindablur">s</span><span class="blur">andbo</span><span class="kindablur">x</span></h1>
+    <div class="subtitle">The AI powered <span class="lilblur">simulation engine to fuel next-g</span>en materials.</div> 
+    
+
+    
+   <div class="interest-text">Interested?</div>
+<form action="https://formspree.io/f/meogyqkv" method="POST" class="email-container">
+  <input type="email" name="email" class="email-input" placeholder="We’ll ping you once we go live!" required>
+  <button type="submit" style="margin-top: 10px; padding: 10px 20px; border-radius: 12px; background-color: white; color: black; font-weight: bold; border: none; cursor: pointer;">
+    Notify Me
+  </button>
+</form>
+
+
+    
+    <img src="C:\Users\91829\OneDrive\Desktop\Sandbox\logo.png" width="30" height="30" style="position: relative; z-index: 2;" />
+
+  
+
+    
+        
+    
+    
+  </section>
+  <footer>
+    <p>Sandbox 2025</p>
+  
+  </footer>
+
+
+
+</body>
+</html>
